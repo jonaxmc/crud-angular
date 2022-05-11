@@ -1,0 +1,23 @@
+<div class="container mt-4">
+    <form [formGroup]="miFormulario" (ngSubmit)="guardar()">
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Cédula</label>
+            <input type="email" class="form-control" formControlName="cedula">
+          </div>
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Nombre</label>
+            <input type="email" class="form-control" formControlName="nombre">
+          </div>
+
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Apellido</label>
+            <input type="email" class="form-control" formControlName="apellido">
+          </div>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Correo</label>
+          <input type="email" class="form-control" formControlName="correo">
+        </div>
+      
+        <button type="submit" class="btn btn-primary" >Guardar</button>
+      </form>
+</div>
